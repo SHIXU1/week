@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="web">
+        <div class="top">
+            <img src="images/a_01.jpg" alt="">
+        </div>
+        <div class="size">
+            <p class="p1">北京首都机场酒店</p>
+            <p>查看1944条查询></p>
+        </div>
+        <div class="di">
+            <img src="images/a_03.jpg" alt="">
+        </div>
+        <div class="box">
+            <div class="left">
+                <dl>
+                    <dt><img src="images/a_06.jpg" alt=""></dt>
+                    <dd>无线上网</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/a_08.jpg" alt=""></dt>
+                    <dd>停车场</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/a_10.jpg" alt=""></dt>
+                    <dd>热水洗浴</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/a_12.jpg" alt=""></dt>
+                    <dd>电吹风</dd>
+                </dl>
+            </div>
+            <div class="right">
+                <span></span>
+                <span class="span"> 详情 ></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+        ajax({
+            url: "/billist",
+            type: "get",
+            datatype: "json",
+            success: function(data) {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
